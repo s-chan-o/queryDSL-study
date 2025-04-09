@@ -2,6 +2,7 @@ package study.querydsl.domain.user.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import study.querydsl.domain.user.type.Authority;
 
 @Entity
 @Table(name = "users")
@@ -20,10 +21,5 @@ public class User {
     private String name;
 
     @Enumerated(EnumType.STRING)
-    private Role role;
-
-    public enum Role {
-        CUSTOMER, OWNER, RIDER
-    }
+    private Authority role;
 }
-
