@@ -21,5 +21,5 @@ public class User {
     private String name;
 
     @Enumerated(EnumType.STRING)
-    private Authority role;
+    private Authority authority;
 }
